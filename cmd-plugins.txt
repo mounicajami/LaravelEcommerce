@@ -1,0 +1,11 @@
+composer create-project laravel/laravel ecommerce
+
+composer require maatwebsite/excel --ignore-platform-req=ext-gd
+
+composer require barryvdh/laravel-dompdf --ignore-platform-req=ext-gd
+
+composer require intervention/image --ignore-platform-req=ext-gd
+
+composer require stripe/stripe-php --ignore-platform-req=ext-gd
+
+
