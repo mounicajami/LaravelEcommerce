@@ -9,7 +9,7 @@
               </a>
             </li>
 
-            <li class="nav-item d-none d-md-block">
+            <!-- <li class="nav-item d-none d-md-block">
               <a href="{{ asset('public/assets/js/index2.html') }}" class="nav-link">
                 <i class="bi bi-grid-1x2 me-1" aria-hidden="true"></i>
                 Live preview
@@ -20,18 +20,18 @@
                 <i class="bi bi-book me-1" aria-hidden="true"></i>
                 Documentation
               </a>
-            </li>
+            </li> -->
           </ul>
           <!--end::Start Navbar Links-->
 
           <!--begin::End Navbar Links-->
           <ul class="navbar-nav ms-auto">
             <!--begin::Navbar Search-->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                 <i class="bi bi-search"></i>
               </a>
-            </li>
+            </li> -->
             <!--end::Navbar Search-->
 
             <!--begin::Messages Dropdown Menu-->
@@ -104,7 +104,7 @@
                       />
                     </div>
                     <div class="flex-grow-1">
-                      <h3 class="dropdown-item-title">
+                          <h3 class="dropdown-item-title">
                         Nora Silvester
                         <span class="float-end fs-7 text-warning">
                           <i class="bi bi-star-fill"></i>
@@ -154,16 +154,16 @@
             <!--end::Notifications Dropdown Menu-->
 
             <!--begin::Fullscreen Toggle-->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#" data-lte-toggle="fullscreen">
                 <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
                 <i data-lte-icon="minimize" class="bi bi-fullscreen-exit d-none"></i>
               </a>
-            </li>
+            </li> -->
             <!--end::Fullscreen Toggle-->
 
             <!--begin::Color Mode Toggle (#6010)-->
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link"
                 href="#"
@@ -218,14 +218,14 @@
                   </button>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <!--end::Color Mode Toggle-->
 
             <!--begin::User Menu Dropdown-->
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="./assets/img/user2-160x160.jpg"
+                  src="{{ asset('assets/img/user2-160x160.jpg') }}"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
