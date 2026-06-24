@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 composer create-project laravel/laravel ecommerce
 
 composer require maatwebsite/excel --ignore-platform-req=ext-gd
@@ -9,3 +10,16 @@ composer require intervention/image --ignore-platform-req=ext-gd
 composer require stripe/stripe-php --ignore-platform-req=ext-gd
 
 
+=======
+composer create-project laravel/laravel ecommerce
+
+composer require maatwebsite/excel --ignore-platform-req=ext-gd
+
+composer require barryvdh/laravel-dompdf --ignore-platform-req=ext-gd
+
+composer require intervention/image --ignore-platform-req=ext-gd
+
+composer require stripe/stripe-php --ignore-platform-req=ext-gd
+
+
+>>>>>>> 5dfad00fd55c3a6eb6fdd7fa1b60febb21948156

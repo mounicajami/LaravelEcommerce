@@ -6,11 +6,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+//Route::get('admin', [AuthController:: class,'login']);
+
 Route::get('admin', function () {
     return view('admin.auth.login');
 });
 
-Route::get('dashboard', function () {
+Route::get('admin/dashboard', function () {
     return view('admin.dashboard');
 });
 
