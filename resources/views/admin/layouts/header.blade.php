@@ -308,40 +308,23 @@
               id="navigation"
             >
               <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
+                <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
                   <i class="nav-icon bi bi-speedometer"></i>
                   <p>
                     Dashboard
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Dashboard v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index2.html" class="nav-link">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Dashboard v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index3.html" class="nav-link active">
-                      <i class="nav-icon bi bi-circle"></i>
-                      <p>Dashboard v3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="./generate/theme.html" class="nav-link">
-                  <i class="nav-icon bi bi-palette"></i>
-                  <p>Theme Generate</p>
+               </li>
+               <li class="nav-item menu-open">
+                <a href="{{ route('admin.list') }}" class="nav-link {{ request()->routeIs('admin.list') ? 'active' : '' }}">
+                  <i class="nav-icon bi bi-people"></i>
+                  <p>
+                    Users
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
                 </a>
-              </li>
+               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
@@ -567,7 +550,7 @@
                 </ul>
               </li>
 
-              <li class="nav-header">PAGES</li>
+              <!-- <li class="nav-header">PAGES</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-file-earmark-text"></i>
@@ -667,9 +650,9 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </li> -->
 
-              <li class="nav-header">EXAMPLES</li>
+              <!-- <li class="nav-header">EXAMPLES</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-box-arrow-in-right"></i>
@@ -732,8 +715,8 @@
                     </a>
                   </li>
                 </ul>
-              </li>
-
+              </li> -->
+<!-- 
               <li class="nav-header">MULTI LEVEL EXAMPLE</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -798,16 +781,16 @@
                   <i class="nav-icon bi bi-circle-fill"></i>
                   <p>Level 1</p>
                 </a>
-              </li>
+              </li> -->
 
-              <li class="nav-header">LABELS</li>
+              <!-- <li class="nav-header">LABELS</li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-circle text-danger"></i>
                   <p class="text">Important</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon bi bi-circle text-warning"></i>
                   <p>Warning</p>
@@ -818,12 +801,12 @@
                   <i class="nav-icon bi bi-circle text-info"></i>
                   <p>Informational</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
             <!--end::Sidebar Menu-->
 
             <!-- Docs CTA (bottom of sidebar) -->
-            <div class="p-3 mt-3 border-top border-secondary border-opacity-25">
+            <!-- <div class="p-3 mt-3 border-top border-secondary border-opacity-25">
               <a
                 href="./docs/introduction.html"
                 class="btn btn-sm btn-outline-light w-100 d-flex align-items-center justify-content-center gap-2"
@@ -831,7 +814,7 @@
                 <i class="bi bi-book" aria-hidden="true"></i>
                 View documentation
               </a>
-            </div>
+            </div> -->
           </nav>
         </div>
         <!--end::Sidebar Wrapper-->
