@@ -265,7 +265,7 @@
                 <!--begin::Menu Footer-->
                 <li class="user-footer">
                   <a href="#" class="btn btn-outline-secondary">Profile</a>
-                  <a href="#" class="btn btn-outline-danger float-end">Sign out</a>
+                  <a href="{{ url('admin/logout') }}" class="btn btn-outline-danger float-end">Sign out</a>
                 </li>
                 <!--end::Menu Footer-->
               </ul>
@@ -317,7 +317,7 @@
                 </a>
                </li>
                <li class="nav-item menu-open">
-                <a href="{{ route('admin.list') }}" class="nav-link {{ request()->routeIs('admin.list') ? 'active' : '' }}">
+                <a href="{{ url('admin/list') }}" class="nav-link {{ request()->routeIs('admin/list') ? 'active' : '' }}">
                   <i class="nav-icon bi bi-people"></i>
                   <p>
                     Users
